@@ -20,7 +20,7 @@ public class Dni {
         }
         return dniNumber;
     }
-    public String getDniLetter(int numbDni){
+    public String getDniWithLetter(int numbDni){
         if( numbDni >= 0 && numbDni <= 99999999){
             return String.valueOf(numbDni) + alphabet[numbDni % 23];
         }
