@@ -8,9 +8,9 @@ public final class App {
     private App() {
     }
     public static void main(String[] args) {
-
-        Dni dniLetter = new Dni();
-        System.out.println(dniLetter.getDniWithLetter(dniLetter.dniInput()));
-
+        Scanner scanner = new Scanner(System.in);
+        Dni dniWithLetter = new Dni();
+        System.out.println(dniWithLetter.getDniWithLetter(dniWithLetter.dniInput(scanner)));
+        scanner.close();
     }
 }
